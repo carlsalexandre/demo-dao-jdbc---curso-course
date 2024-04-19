@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-public class Program {
+public class ProgramSeller {
 
     public static void main(String[] args) {
 
@@ -41,12 +41,12 @@ public class Program {
 
         System.out.println("\n=== TEST 5: seller update =====");
         seller = sellerDao.findById(1);
-        seller.setName("Martha Waine");
+        seller.setName("Maria Luiza");
         sellerDao.update(seller);
         System.out.println("Update completed");
 
         System.out.println("\n=== TEST 6: seller delete =====");
-        System.out.println("Enter id for delete test: ");
+        System.out.print("Enter id for delete test: ");
         int id = sc.nextInt();
         sellerDao.deleteById(id);
         System.out.println("Delete completed");
